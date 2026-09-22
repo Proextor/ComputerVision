@@ -1,0 +1,14 @@
+{
+  "annotation_version": "1.0",
+  "scenario_id": "synthetic_empty",
+  "actor_tracks": {},
+  "events": [],
+  "states": [
+    {
+      "start_seconds": 0.0,
+      "end_seconds": 0.6,
+      "visible_count": 0,
+      "notes": "Synthetic diagnostic only; no event accuracy claim"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "manifest_version": "1.0",
+  "scenarios": [
+    {
+      "id": "synthetic_empty",
+      "description": "Tiny synthetic empty scene; tests plumbing, not model accuracy",
+      "split": "diagnostic",
+      "trace": "fixtures/empty.trace.jsonl",
+      "annotations": "fixtures/empty.annotations.json",
+      "tags": ["synthetic", "empty"]
+    }
+  ]
+}

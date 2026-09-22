@@ -1,0 +1,10 @@
+{
+  "zones": [
+    {
+      "id": "interaction",
+      "label": "Interaction Area",
+      "role": "interaction",
+      "polygon": [[0.25, 0.30], [0.75, 0.30], [0.90, 1.0], [0.10, 1.0]]
+    }
+  ]
+}

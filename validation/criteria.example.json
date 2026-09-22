@@ -1,0 +1,6 @@
+{
+  "minimum_event_f1": 0.85,
+  "maximum_false_events_per_minute": 0.5,
+  "maximum_median_latency_seconds": 0.5,
+  "minimum_occupancy_accuracy": 0.95
+}

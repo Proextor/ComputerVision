@@ -1,0 +1,1363 @@
+[
+  {
+    "label": "Quiet room",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 0,
+      "timestamp_utc": "2026-01-01T00:00:00Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 0,
+      "people": [],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 0,
+          "stabilized_count": 0,
+          "state": "empty"
+        },
+        "spatial": {
+          "centroid": null,
+          "horizontal_counts": {
+            "left": 0,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": null,
+          "aggregate_activity_level": "unknown",
+          "contributing_count": 0,
+          "coverage_ratio": 0.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 0
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "none"
+        },
+        "focus_candidate": null
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "Someone arrives",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 1,
+      "timestamp_utc": "2026-01-01T00:00:06Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 1,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 1,
+          "stabilized_count": 1,
+          "state": "single"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 1,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 1
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "presence"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": [
+        {
+          "event_id": 2,
+          "type": "room_became_occupied",
+          "timestamp_utc": "2026-01-01T00:00:06Z",
+          "session_id": "demo-a",
+          "track_id": 1,
+          "zone_id": null,
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  {
+    "label": "A little closer",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 2,
+      "timestamp_utc": "2026-01-01T00:00:12Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 1,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 1,
+          "stabilized_count": 1,
+          "state": "single"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 1,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 1,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 0
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "approaching"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "One hand raised",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 3,
+      "timestamp_utc": "2026-01-01T00:00:18Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 1,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 1,
+          "stabilized_count": 1,
+          "state": "single"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 1,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 1
+        },
+        "gesture_summary": {
+          "left_hand_raised": 1,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "signal_detected"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": [
+        {
+          "event_id": 4,
+          "type": "hand_raise_started",
+          "timestamp_utc": "2026-01-01T00:00:18Z",
+          "session_id": "demo-a",
+          "track_id": 1,
+          "zone_id": null,
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  {
+    "label": "A wave",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 4,
+      "timestamp_utc": "2026-01-01T00:00:24Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 1,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 1,
+          "stabilized_count": 1,
+          "state": "single"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 1,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 1
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 1,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "signal_detected"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": [
+        {
+          "event_id": 5,
+          "type": "wave_detected",
+          "timestamp_utc": "2026-01-01T00:00:24Z",
+          "session_id": "demo-a",
+          "track_id": 1,
+          "zone_id": null,
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  {
+    "label": "Both hands raised",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 5,
+      "timestamp_utc": "2026-01-01T00:00:30Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 1,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 1,
+          "stabilized_count": 1,
+          "state": "single"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 1,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 1
+        },
+        "gesture_summary": {
+          "left_hand_raised": 1,
+          "right_hand_raised": 1,
+          "both_hands_raised": 1,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "signal_detected"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": [
+        {
+          "event_id": 6,
+          "type": "both_hands_raised_started",
+          "timestamp_utc": "2026-01-01T00:00:30Z",
+          "session_id": "demo-a",
+          "track_id": 1,
+          "zone_id": null,
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  {
+    "label": "Room in motion",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 6,
+      "timestamp_utc": "2026-01-01T00:00:36Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 1,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 1,
+          "stabilized_count": 1,
+          "state": "single"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.85,
+          "aggregate_activity_level": "high",
+          "contributing_count": 1,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 1
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "presence"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "A second person",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 7,
+      "timestamp_utc": "2026-01-01T00:00:42Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 2,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        },
+        {
+          "track_id": 2,
+          "bbox": {
+            "x1": 0.65,
+            "y1": 0.2,
+            "x2": 0.85,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.75,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 2,
+          "stabilized_count": 2,
+          "state": "small_group"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.525,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 1
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 2,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 2
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "presence"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "Focus moves",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 8,
+      "timestamp_utc": "2026-01-01T00:00:48Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 2,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        },
+        {
+          "track_id": 2,
+          "bbox": {
+            "x1": 0.65,
+            "y1": 0.2,
+            "x2": 0.85,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.75,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 2,
+          "stabilized_count": 2,
+          "state": "small_group"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.525,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 1
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 2,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 2
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "presence"
+        },
+        "focus_candidate": {
+          "track_id": 2,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": [
+        {
+          "event_id": 9,
+          "type": "focus_candidate_changed",
+          "timestamp_utc": "2026-01-01T00:00:48Z",
+          "session_id": "demo-a",
+          "track_id": 2,
+          "zone_id": null,
+          "metadata": {
+            "previous": 1,
+            "new": 2,
+            "previous_score": 0.8,
+            "new_score": 0.8,
+            "focus_track_id": 2,
+            "focus_score": 0.8
+          }
+        }
+      ]
+    }
+  },
+  {
+    "label": "Everyone leaves",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 9,
+      "timestamp_utc": "2026-01-01T00:00:54Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 0,
+      "people": [],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 0,
+          "stabilized_count": 0,
+          "state": "empty"
+        },
+        "spatial": {
+          "centroid": null,
+          "horizontal_counts": {
+            "left": 0,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": null,
+          "aggregate_activity_level": "unknown",
+          "contributing_count": 0,
+          "coverage_ratio": 0.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 0
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "none"
+        },
+        "focus_candidate": null
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "Source unavailable",
+    "service_status": "unavailable",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 10,
+      "timestamp_utc": "2026-01-01T00:01:00Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "unavailable",
+      "processing_fps": null,
+      "visible_count": 0,
+      "people": [],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 0,
+          "stabilized_count": null,
+          "state": "unknown"
+        },
+        "spatial": {
+          "centroid": null,
+          "horizontal_counts": {
+            "left": 0,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": null,
+          "aggregate_activity_level": "unknown",
+          "contributing_count": 0,
+          "coverage_ratio": 0.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 0
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "unknown"
+        },
+        "focus_candidate": null
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "Live data delayed",
+    "service_status": "stale",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 11,
+      "timestamp_utc": "2026-01-01T00:01:06Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 1,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 1,
+          "stabilized_count": 1,
+          "state": "single"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 1,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 1
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "presence"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "Video complete",
+    "service_status": "eof",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-a",
+      "frame_id": 12,
+      "timestamp_utc": "2026-01-01T00:01:12Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "eof",
+      "processing_fps": null,
+      "visible_count": 0,
+      "people": [],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 0,
+          "stabilized_count": null,
+          "state": "unknown"
+        },
+        "spatial": {
+          "centroid": null,
+          "horizontal_counts": {
+            "left": 0,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": null,
+          "aggregate_activity_level": "unknown",
+          "contributing_count": 0,
+          "coverage_ratio": 0.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 0
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "unknown"
+        },
+        "focus_candidate": null
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "New session",
+    "service_status": "ready",
+    "snapshot": {
+      "schema_version": "4.0",
+      "session_id": "demo-b",
+      "frame_id": 13,
+      "timestamp_utc": "2026-01-01T00:01:18Z",
+      "source": "synthetic-demo",
+      "source_frame_index": null,
+      "source_time_seconds": null,
+      "frame_width": 1280,
+      "frame_height": 720,
+      "camera_status": "ok",
+      "processing_fps": null,
+      "visible_count": 1,
+      "people": [
+        {
+          "track_id": 1,
+          "bbox": {
+            "x1": 0.19999999999999998,
+            "y1": 0.2,
+            "x2": 0.4,
+            "y2": 0.85
+          },
+          "confidence": null,
+          "keypoints": null,
+          "anchor_point": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "bbox_area_ratio": null,
+          "proximity_score": null,
+          "velocity_x": null,
+          "velocity_y": null,
+          "speed": null,
+          "motion_state": "unknown",
+          "zones": [],
+          "confirmed_zones": [],
+          "dwell_seconds": {},
+          "trajectory": [],
+          "pose_analysis": null
+        }
+      ],
+      "zone_occupancy": {},
+      "room_state": {
+        "occupancy": {
+          "visible_count": 1,
+          "stabilized_count": 1,
+          "state": "single"
+        },
+        "spatial": {
+          "centroid": {
+            "x": 0.3,
+            "y": 0.85
+          },
+          "horizontal_counts": {
+            "left": 1,
+            "centre": 0,
+            "right": 0
+          },
+          "mean_proximity_score": null,
+          "dispersion": null,
+          "zone_occupancy": {},
+          "most_occupied_zone_id": null
+        },
+        "activity": {
+          "aggregate_activity_score": 0.12,
+          "aggregate_activity_level": "low",
+          "contributing_count": 1,
+          "coverage_ratio": 1.0
+        },
+        "motion_summary": {
+          "approaching": 0,
+          "departing": 0,
+          "stationary": 0,
+          "unknown": 1
+        },
+        "gesture_summary": {
+          "left_hand_raised": 0,
+          "right_hand_raised": 0,
+          "both_hands_raised": 0,
+          "recently_waving": 0,
+          "unknown": 0
+        },
+        "interaction": {
+          "state": "presence"
+        },
+        "focus_candidate": {
+          "track_id": 1,
+          "score": 0.8,
+          "evidence": [
+            "presence"
+          ],
+          "is_visible": true
+        }
+      },
+      "events": []
+    }
+  }
+]

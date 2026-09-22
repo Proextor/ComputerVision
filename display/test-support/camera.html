@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- Development-only manual test fixture. Vite production build does not include this file. -->
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Synthetic camera test — Aura</title></head>
+<body><div id="root"></div><script type="module">
+// Exercise real HTMLVideoElement playback and JPEG encoding without a physical device.
+// This fixture never requests a real camera and is visibly labelled inside every frame.
+const streams = new Set();
+Object.defineProperty(navigator, 'mediaDevices', { configurable: true, value: {
+  getUserMedia: async () => {
+    const canvas = document.createElement('canvas'); canvas.width = 640; canvas.height = 360;
+    const context = canvas.getContext('2d'); let frame = 0;
+    const draw = () => {
+      const gradient = context.createLinearGradient(0, 0, 640, 360);
+      gradient.addColorStop(0, '#647f8a'); gradient.addColorStop(1, '#baa88b');
+      context.fillStyle = gradient; context.fillRect(0, 0, 640, 360);
+      context.fillStyle = '#cee2db'; context.fillRect((frame * 2) % 640, 240, 80, 30);
+      context.fillStyle = '#162f39'; context.font = '16px sans-serif';
+      context.fillText('SYNTHETIC CAMERA · NO PHYSICAL DEVICE', 140, 160);
+      context.fillText(`Frame ${frame++}`, 260, 186);
+    };
+    draw(); const stream = canvas.captureStream(15), timer = setInterval(draw, 66);
+    streams.add(stream);
+    for (const track of stream.getTracks()) {
+      const stop = track.stop.bind(track);
+      track.stop = () => { clearInterval(timer); stop(); streams.delete(stream); };
+    }
+    return stream;
+  }
+} });
+addEventListener('pagehide', () => { for (const stream of streams) for (const track of stream.getTracks()) track.stop(); });
+await import('/src/main.tsx');
+</script></body></html>

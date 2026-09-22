@@ -1,0 +1,28 @@
+{
+  "small_group_max": 4,
+  "crowd_min": 5,
+  "occupied_debounce_seconds": 0.35,
+  "empty_debounce_seconds": 0.75,
+  "horizontal_boundaries": [0.3333333333333333, 0.6666666666666666],
+  "history_seconds": 3.0,
+  "stale_input_seconds": 5.0,
+  "activity_smoothing_alpha": 0.35,
+  "activity_reference_seconds": 0.2,
+  "minimum_activity_coverage": 0.5,
+  "activity_thresholds": [0.12, 0.30, 0.60],
+  "activity_debounce_seconds": 0.35,
+  "interaction_debounce_seconds": 0.35,
+  "focus_weights": {
+    "recent_wave": 0.45,
+    "both_hands_raised": 0.4,
+    "one_hand_raised": 0.25,
+    "interaction_zone": 0.2,
+    "approaching": 0.15,
+    "proximity": 0.1,
+    "dwell": 0.1
+  },
+  "minimum_focus_score": 0.15,
+  "focus_switch_margin": 0.15,
+  "focus_loss_tolerance_seconds": 0.75,
+  "dwell_full_score_seconds": 3.0
+}

@@ -1,0 +1,7 @@
+{
+  "sweep_version": "1.0",
+  "parameters": {
+    "pose.wave_min_amplitude_ratio": [0.12, 0.15, 0.18],
+    "room.focus_switch_margin": [0.12, 0.15]
+  }
+}
