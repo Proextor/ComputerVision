@@ -1,8 +1,9 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { App } from './App';
+import { App } from './app/App';
 import { readConfig } from './config';
 import './styles.css';
+import './app/theme.css';
 
 const root = createRoot(document.getElementById('root')!);
 try {

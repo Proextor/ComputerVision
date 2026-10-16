@@ -1,0 +1,28 @@
+{
+  "id": "esp32-oled-tabletop", "version": "1.0", "title": "ESP32 + OLED tabletop assembly",
+  "description": "Connect a compatible I2C OLED to an ESP32 with power disconnected.", "estimatedMinutes": 12,
+  "safetyNotice": "Keep power disconnected while wiring. Check labels on the actual hardware before every connection.",
+  "components": [
+    { "id": "esp32", "name": "ESP32 development board", "type": "microcontroller", "description": "3.3V ESP32 board." },
+    { "id": "oled", "name": "I2C OLED module", "type": "display", "description": "OLED module compatible with 3.3V logic and supply.", "notes": "Confirm the module pin labels and voltage rating." }
+  ],
+  "workspace": { "type": "planar_four_corner", "coordinateSystem": "normalized", "aspectRatio": 1.6, "calibrationInstructions": "Calibrate the four corners of the physical tabletop before following overlays.", "movementWarning": "Recalibrate after either board or the camera moves; calibration is not proof of wiring." },
+  "anchors": [
+    { "id": "esp32-gnd", "componentId": "esp32", "label": "ESP32 GND", "x": 0.22, "y": 0.64 },
+    { "id": "esp32-3v3", "componentId": "esp32", "label": "ESP32 3.3V", "x": 0.22, "y": 0.34 },
+    { "id": "esp32-gpio21", "componentId": "esp32", "label": "ESP32 GPIO21", "x": 0.37, "y": 0.40 },
+    { "id": "esp32-gpio22", "componentId": "esp32", "label": "ESP32 GPIO22", "x": 0.37, "y": 0.49 },
+    { "id": "oled-gnd", "componentId": "oled", "label": "OLED GND", "x": 0.76, "y": 0.64 },
+    { "id": "oled-vcc", "componentId": "oled", "label": "OLED VCC", "x": 0.76, "y": 0.34 },
+    { "id": "oled-sda", "componentId": "oled", "label": "OLED SDA", "x": 0.62, "y": 0.40 },
+    { "id": "oled-scl", "componentId": "oled", "label": "OLED SCL", "x": 0.62, "y": 0.49 }
+  ],
+  "steps": [
+    { "id": "prepare", "order": 1, "title": "Prepare with power off", "instruction": "Disconnect USB and any external power. Confirm the OLED is compatible with 3.3V.", "prerequisites": [], "warning": "Do not wire while powered.", "overlays": [], "expectedState": "Both boards are unpowered and pin labels are readable.", "verification": { "type": "user_confirmation" }, "failureRecovery": "Disconnect power and re-check the module documentation." },
+    { "id": "ground", "order": 2, "title": "Connect GND to GND", "instruction": "Connect ESP32 GND to OLED GND.", "prerequisites": ["prepare"], "overlays": [{ "type": "arrow", "fromAnchorId": "esp32-gnd", "toAnchorId": "oled-gnd", "label": "GND" }], "expectedState": "A ground wire joins the labelled GND pins.", "verification": { "type": "user_confirmation" }, "failureRecovery": "Remove the wire and check both physical GND labels." },
+    { "id": "power", "order": 3, "title": "Connect 3.3V to VCC", "instruction": "Connect ESP32 3.3V to OLED VCC.", "prerequisites": ["ground"], "warning": "Use 3.3V only after checking OLED compatibility.", "overlays": [{ "type": "arrow", "fromAnchorId": "esp32-3v3", "toAnchorId": "oled-vcc", "label": "3.3V" }], "expectedState": "A 3.3V wire joins VCC.", "verification": { "type": "user_confirmation" }, "failureRecovery": "Remove the wire and check the OLED voltage requirement." },
+    { "id": "sda", "order": 4, "title": "Connect GPIO21 to SDA", "instruction": "Connect GPIO21 to OLED SDA.", "prerequisites": ["power"], "overlays": [{ "type": "path", "fromAnchorId": "esp32-gpio21", "toAnchorId": "oled-sda", "label": "SDA" }], "expectedState": "GPIO21 connects to SDA.", "verification": { "type": "user_confirmation" }, "failureRecovery": "Re-check the physical GPIO21 and SDA labels." },
+    { "id": "scl", "order": 5, "title": "Connect GPIO22 to SCL", "instruction": "Connect GPIO22 to OLED SCL.", "prerequisites": ["sda"], "overlays": [{ "type": "path", "fromAnchorId": "esp32-gpio22", "toAnchorId": "oled-scl", "label": "SCL" }], "expectedState": "GPIO22 connects to SCL.", "verification": { "type": "user_confirmation" }, "failureRecovery": "Re-check the physical GPIO22 and SCL labels." },
+    { "id": "review", "order": 6, "title": "Final visual review", "instruction": "With power still disconnected, visually review every labelled connection.", "prerequisites": ["scl"], "warning": "This review version does not electrically verify connections.", "overlays": [{ "type": "region", "anchorIds": ["esp32-gnd", "esp32-3v3", "esp32-gpio21", "esp32-gpio22", "oled-gnd", "oled-vcc", "oled-sda", "oled-scl"], "label": "Review labels" }], "expectedState": "Each wire has been visually checked against actual hardware labels.", "verification": { "type": "user_confirmation" }, "failureRecovery": "Return to the affected connection and re-check labels." }
+  ]
+}
